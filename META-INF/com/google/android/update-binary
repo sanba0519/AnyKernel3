@@ -574,24 +574,25 @@ sleep 0.5
 ui_print " " "内核作者：酷安@三笆-GitHub@sanba0519" " ";
 sleep 0.5
 
-messages=(
-"    “阴阳有序，命运无常。”"
-"    “力量若达到了极限，接着考验的便是人心”"
-"    “生于生时，亡于亡刻。”"
-"    “咳咳, 太阳出来我晒太阳~ 月亮出来我晒月亮咯~”"
-"    “大丘丘病了，二丘丘瞧；三丘丘采药，四丘丘熬；”"
-"    我是胡桃の狗wwwww"
-)
+#好像有的软件不能正确识别 还是删了吧~
+#messages=(
+#"    “阴阳有序，命运无常。”"
+#"    “力量若达到了极限，接着考验的便是人心”"
+#"    “生于生时，亡于亡刻。”"
+#"    “咳咳, 太阳出来我晒太阳~ 月亮出来我晒月亮咯~”"
+#"    “大丘丘病了，二丘丘瞧；三丘丘采药，四丘丘熬；”"
+#"    我是胡桃の狗wwwww"
+#)
 
-random_msg="${messages[$((RANDOM % ${#messages[@]}))]}"
-ui_print "$random_msg"
+#random_msg="${messages[$((RANDOM % ${#messages[@]}))]}"
+#ui_print "$random_msg"
 
-sleep 1
-ui_print "$random_msg"
-sleep 1
-ui_print "$random_msg"
-sleep 1
-ui_print "$random_msg"
+#sleep 1
+#ui_print "$random_msg"
+#sleep 1
+#ui_print "$random_msg"
+#sleep 1
+#ui_print "$random_msg"
 
 grep -oE 'AK_BASE.*' META-INF/com/google/android/updater-script >&2;
 ui_print " ";
